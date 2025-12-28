@@ -12,18 +12,6 @@
             box-sizing: border-box;
         }
 
-        /* Override any GitHub Pages default styles */
-        ul, ol {
-            list-style: none !important;
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-
-        li {
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
@@ -33,11 +21,11 @@
 
         .masthead {
             background-color: #001f3f;
-            border-bottom: 1px solid #003d7a;
+            border-bottom: 1px solid #e0e0e0;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
         .masthead__inner {
@@ -47,28 +35,36 @@
         }
 
         .site-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             padding: 1rem 0;
-            text-align: center;
+        }
+
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
         }
 
         .nav-links {
+            display: flex;
             list-style: none;
-            margin: 0;
-            padding: 0;
-            display: inline-block;
+            gap: 2rem;
+            align-items: center;
         }
 
         .nav-links li {
-            display: inline-block;
-            margin: 0 1.5rem;
+            margin: 0;
+            padding: 0;
         }
 
         .nav-links a {
             color: #fff;
             text-decoration: none;
-            font-size: 1rem;
+            font-size: 0.95rem;
             transition: color 0.3s;
-            padding: 0.5rem 0;
         }
 
         .nav-links a:hover {
@@ -178,21 +174,15 @@
             text-decoration: underline;
         }
 
-        .highlight-box {
-            background-color: #e3f2fd;
-            border-left: 4px solid #001f3f;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            color: #001f3f;
-            font-weight: 500;
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            font-style: italic;
         }
 
         .news-section {
             margin-top: 2.5rem;
-        }
-
-        .news-section:first-child {
-            margin-top: 0;
         }
 
         .news-section h2 {
@@ -227,10 +217,6 @@
             margin-bottom: 1.5rem;
             padding-bottom: 1.5rem;
             border-bottom: 1px solid #f0f0f0;
-        }
-
-        .publication-item:last-child {
-            border-bottom: none;
         }
 
         .publication-title {
@@ -281,10 +267,6 @@
             margin: 0 1rem;
         }
 
-        .footer-links a:hover {
-            color: #4da6ff;
-        }
-
         .footer-copyright {
             font-size: 0.85rem;
             color: #aaa;
@@ -308,13 +290,7 @@
 
         @media (max-width: 640px) {
             .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 0.75rem;
-            }
-
-            .nav-links a {
-                font-size: 0.8rem;
+                display: none;
             }
 
             .page-content {
@@ -327,8 +303,8 @@
     <div class="masthead">
         <div class="masthead__inner">
             <nav class="site-nav">
+                <a href="#home" class="site-title">Chrysanthi Kosyfaki</a>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
                     <li><a href="#publications">Publications</a></li>
                     <li><a href="#students">Students</a></li>
                     <li><a href="#talks">Talks</a></li>
@@ -357,28 +333,26 @@
         </div>
 
         <article class="page-content" id="home">
-            <section class="news-section">
-                <h2>ABOUT ME</h2>
+            <section>
+                <h2 class="section-title">ABOUT ME</h2>
                 <p>I am a postdoctoral research fellow in the <a href="https://cse.hkust.edu.hk/">Department of Computer Science and Engineering</a> at Hong Kong University of Science and Technology.</p>
-
                 <p>Previously, I was a postdoctoral research associate at the University of Hong Kong. I obtained my Ph.D. degree from University of Ioannina, Computer Science and Engineering Department, working with Prof. Nikos Mamoulis.</p>
             </section>
 
             <section class="news-section">
                 <h2>RESEARCH INTERESTS</h2>
                 <p>My research interests lie in the area of spatiotemporal data management and flow analytics in large graphs, with a particular focus on a new class of networks called Temporal Interaction Networks (TINs). These networks model dynamic systems where entities exchange quantities, such as financial transactions, transportation flows, or communication data.</p>
-
-                <p>Over the past few years, I have been developing efficient solutions to optimize classical problems—such as max-flow computation—by introducing the temporal dimension. Currently, my work focuses on data provenance analytics in large graphs, with an emphasis on designing techniques to trace the origin of transmitted quantities in graph-structured data.</p>
-
+                <p>Over the past few years, I have been developing efficient solutions to optimize classical problems, such as max-flow computation, by introducing the temporal dimension. Currently, my work focuses on data provenance analytics in large graphs, with an emphasis on designing techniques to trace the origin of transmitted quantities in graph-structured data.</p>
                 <p>Recently, I have also started exploring the Text-to-SQL domain, focusing on addressing challenges related to text ambiguity in natural language database queries.</p>
             </section>
 
             <section class="news-section">
                 <h2>RECENT NEWS</h2>
                 <ul>
-                    <li><span class="news-date">2024-06:</span> One paper accepted to ICDE 2026 - "BEACON: A Benchmark for Efficient and Accurate Counting of Subgraphs".</li>
-                    <li><span class="news-date">2025-05:</span> Serving as PC member for PVLDB 2026 and ICDE 2026, and as a co-chair for TKDE Poster track @ICDE 2026 and publicity chair for @MDM 2026.</li>
-                    <li><span class="news-date">2025-09:</span> One paper accepted to SSTD 2025.</li>
+                    <li><span class="news-date">2025-11:</span> One paper accepted to ICDE 2026</li>
+                    <li><span class="news-date">2025-11:</span> I will serve as publicity chair for @MDM 2026</li>
+                    <li><span class="news-date">2025-06:</span> One paper accepted to SSTD 2025.</li>
+                    <li><span class="news-date">2025-05:</span> Serving as PC member for PVLDB 2026 and ICDE 2026, and as a co-chair for TKDE Poster track @ICDE 2026.</li>
                     <li><span class="news-date">2025-05:</span> Started position as Postdoctoral Research Fellow at HKUST.</li>
                     <li><span class="news-date">2024-06:</span> One paper accepted to PVLDB 2024 - "A Sampling-based Framework for Hypothesis Testing on Large Attributed Graphs".</li>
                     <li><span class="news-date">2023-04:</span> Successfully defended Ph.D. thesis on "Flow Analytics in Large Graphs".</li>
@@ -388,18 +362,16 @@
 
             <section id="publications" class="news-section">
                 <h2>SELECTED PUBLICATIONS</h2>
-                
-                <div class="publication-item">
-                    <div class="publication-title">Refine or Execute? A Cost-Based Framework for
-                      Socratic Query Refinement</div>
-                    <div class="publication-authors">Ruiyuan Zhang, Chrysanthi Kosyfaki, Sau Lai Yip, Xiaofang Zhou</div>
-                    <div class="publication-venue">Under review @DEFT, ICDE 2026</div>
+                  <div class="publication-item">
+                    <div class="publication-title">BEACON: A Benchmark for Efficient and Accurate Counting of Subgraphs</div>
+                    <div class="publication-authors">Xiangju Zhu, Mohammad Matin Najafi, Chrysanthi Kosyfaki, Xiaodong Li, Reynold Cheng, Laks V.S. Lakshmanan</div>
+                    <div class="publication-venue"> @ICDE 2026</div>
                 </div>
 
                 <div class="publication-item">
-                    <div class="publication-title">BEACON: A Benchmark for Efficient and Accurate Counting of Subgraphs</div>
-                    <div class="publication-authors">Xiangju Zhu, Mohammad Matin Najafi, Chrysanthi Kosyfaki, Xiaodong Li, Reynold Cheng, Laks V.S. Lakshmanan</div>
-                    <div class="publication-venue">@ICDE 2026</div>
+                    <div class="publication-title">Refine or Execute? A Cost-Based Framework for Socratic Query Refinement </div>
+                    <div class="publication-authors">Ruiyuan Zhang, Chrysanthi Kosyfaki, Sau Lai Yip, Xiaofang Zhou</div>
+                    <div class="publication-venue">Under review @DEFT, ICDE 2026</div>
                 </div>
 
                 <div class="publication-item">
@@ -528,8 +500,8 @@
         <div class="footer-content">
             <div class="footer-links">
                 <a href="#home">Home</a>
-                <a href="https://github.com/Chrysanthi-Kosyfaki"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://chrysanthi-kosyfaki.github.io"><i class="fas fa-globe"></i> Website</a>
+                <a href="https://github.com/kosyfakicse"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://kosyfakicse.github.io"><i class="fas fa-globe"></i> Website</a>
             </div>
             <div class="footer-copyright">
                 © 2025 Chrysanthi Kosyfaki. Last updated October 2025
