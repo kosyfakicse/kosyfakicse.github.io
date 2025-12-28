@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -341,15 +342,17 @@
             <section class="news-section">
                 <h2>RESEARCH INTERESTS</h2>
                 <p>My research interests lie in the area of spatiotemporal data management and flow analytics in large graphs, with a particular focus on a new class of networks called Temporal Interaction Networks (TINs). These networks model dynamic systems where entities exchange quantities, such as financial transactions, transportation flows, or communication data.</p>
-                <p>Over the past few years, I have been developing efficient solutions to optimize classical problems—such as max-flow computation—by introducing the temporal dimension. Currently, my work focuses on data provenance analytics in large graphs, with an emphasis on designing techniques to trace the origin of transmitted quantities in graph-structured data.</p>
+                <p>Over the past few years, I have been developing efficient solutions to optimize classical problems, such as max-flow computation, by introducing the temporal dimension. Currently, my work focuses on data provenance analytics in large graphs, with an emphasis on designing techniques to trace the origin of transmitted quantities in graph-structured data.</p>
                 <p>Recently, I have also started exploring the Text-to-SQL domain, focusing on addressing challenges related to text ambiguity in natural language database queries.</p>
             </section>
 
             <section class="news-section">
                 <h2>RECENT NEWS</h2>
                 <ul>
-                    <li><span class="news-date">2025-10:</span> Serving as PC member for PVLDB 2026 and ICDE 2026, and as a co-chair for TKDE Poster track @ICDE 2026.</li>
-                    <li><span class="news-date">2025-09:</span> One paper accepted to SSTD 2025.</li>
+                    <li><span class="news-date">2025-11:</span> One paper accepted to ICDE 2026</li>
+                    <li><span class="news-date">2025-11:</span> I will serve as publicity chair for @MDM 2026</li>
+                    <li><span class="news-date">2025-06:</span> One paper accepted to SSTD 2025.</li>
+                    <li><span class="news-date">2025-05:</span> Serving as PC member for PVLDB 2026 and ICDE 2026, and as a co-chair for TKDE Poster track @ICDE 2026.</li>
                     <li><span class="news-date">2025-05:</span> Started position as Postdoctoral Research Fellow at HKUST.</li>
                     <li><span class="news-date">2024-06:</span> One paper accepted to PVLDB 2024 - "A Sampling-based Framework for Hypothesis Testing on Large Attributed Graphs".</li>
                     <li><span class="news-date">2023-04:</span> Successfully defended Ph.D. thesis on "Flow Analytics in Large Graphs".</li>
@@ -359,17 +362,16 @@
 
             <section id="publications" class="news-section">
                 <h2>SELECTED PUBLICATIONS</h2>
-                
-                <div class="publication-item">
-                    <div class="publication-title">Data-Aware Socratic Query Refinement in Database Systems</div>
-                    <div class="publication-authors">Ruiyuan Zhang, Chrysanthi Kosyfaki, Xiaofang Zhou</div>
-                    <div class="publication-venue">Under review @DEFT, ICDE 2026</div>
+                  <div class="publication-item">
+                    <div class="publication-title">BEACON: A Benchmark for Efficient and Accurate Counting of Subgraphs</div>
+                    <div class="publication-authors">Xiangju Zhu, Mohammad Matin Najafi, Chrysanthi Kosyfaki, Xiaodong Li, Reynold Cheng, Laks V.S. Lakshmanan</div>
+                    <div class="publication-venue"> @ICDE 2026</div>
                 </div>
 
                 <div class="publication-item">
-                    <div class="publication-title">BEACON: A Benchmark for Efficient and Accurate Counting of Subgraphs</div>
-                    <div class="publication-authors">Xiangju Zhu, Mohammad Matin Najafi, Chrysanthi Kosyfaki, Xiaodong Li, Reynold Cheng, Laks V.S. Lakshmanan</div>
-                    <div class="publication-venue">Under review @ICDE 2026</div>
+                    <div class="publication-title">Refine or Execute? A Cost-Based Framework for Socratic Query Refinement </div>
+                    <div class="publication-authors">Ruiyuan Zhang, Chrysanthi Kosyfaki, Sau Lai Yip, Xiaofang Zhou</div>
+                    <div class="publication-venue">Under review @DEFT, ICDE 2026</div>
                 </div>
 
                 <div class="publication-item">
@@ -502,7 +504,7 @@
                 <a href="https://kosyfakicse.github.io"><i class="fas fa-globe"></i> Website</a>
             </div>
             <div class="footer-copyright">
-                © 2025 Chrysanthi Kosyfaki. Last updated October 2025
+                © 2025 Chrysanthi Kosyfaki. Last updated December 2025
             </div>
         </div>
     </div>
