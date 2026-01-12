@@ -430,7 +430,7 @@
                 </div>
                 <div class="student-item">
                     <span class="student-name">Nujibieke Shabuerjiang</span> - Working on spatiotemporal data management topics
-
+                </div>
                 <h3 style="margin-top: 1.5rem; margin-bottom: 1rem; color: #001f3f;">PhD Students (HKU)</h3>
                 <div class="student-item">
                     <span class="student-name">Yun (Carrie) Wang</span> - Working on hypothesis testing on graphs
