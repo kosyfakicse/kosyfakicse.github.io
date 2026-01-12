@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chrysanthi Kosyfaki - Academic Website</title>
+    <title>Chrysanthi Kosyfaki</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -348,7 +348,8 @@
             <section class="news-section">
                 <h2>RECENT NEWS</h2>
                 <ul>
-                    <li><span class="news-date">2025-11:</span> One paper accepted to ICDE 2026</li>
+                    <li><span class="news-date">2026-01:</span> One tutorial accepted to SIGMOD 2026</li>
+                    <li><span class="news-date">2025-12:</span> One paper accepted to ICDE 2026</li>
                     <li><span class="news-date">2025-11:</span> I will serve as publicity chair for @MDM 2026</li>
                     <li><span class="news-date">2025-06:</span> One paper accepted to SSTD 2025.</li>
                     <li><span class="news-date">2025-05:</span> Serving as PC member for PVLDB 2026 and ICDE 2026, and as a co-chair for TKDE Poster track @ICDE 2026.</li>
@@ -429,10 +430,6 @@
                 </div>
                 <div class="student-item">
                     <span class="student-name">Nujibieke Shabuerjiang</span> - Working on spatiotemporal data management topics
-                </div>
-                <div class="student-item">
-                    <span class="student-name">Jounghoon Kim</span> - Working on ANNS problems
-                </div>
 
                 <h3 style="margin-top: 1.5rem; margin-bottom: 1rem; color: #001f3f;">PhD Students (HKU)</h3>
                 <div class="student-item">
@@ -503,7 +500,7 @@
                 <a href="https://kosyfakicse.github.io"><i class="fas fa-globe"></i> Website</a>
             </div>
             <div class="footer-copyright">
-                © 2025 Chrysanthi Kosyfaki. Last updated December 2025
+                © 2025 Chrysanthi Kosyfaki. Last updated January 2026
             </div>
         </div>
     </div>
