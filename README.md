@@ -348,6 +348,7 @@
             <section class="news-section">
                 <h2>RECENT NEWS</h2>
                 <ul>
+                     <li><span class="news-date">2026-02:</span> Serving as PC member for PVLDB 2027</li>
                     <li><span class="news-date">2026-01:</span> One tutorial accepted to SIGMOD 2026</li>
                     <li><span class="news-date">2025-12:</span> One paper accepted to ICDE 2026</li>
                     <li><span class="news-date">2025-11:</span> I will serve as publicity chair for @MDM 2026</li>
@@ -366,18 +367,6 @@
                     <div class="publication-title">BEACON: A Benchmark for Efficient and Accurate Counting of Subgraphs</div>
                     <div class="publication-authors">Xiangju Zhu, Mohammad Matin Najafi, Chrysanthi Kosyfaki, Xiaodong Li, Reynold Cheng, Laks V.S. Lakshmanan</div>
                     <div class="publication-venue"> @ICDE 2026</div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-title">Refine or Execute? A Cost-Based Framework for Socratic Query Refinement </div>
-                    <div class="publication-authors">Ruiyuan Zhang, Chrysanthi Kosyfaki, Sau Lai Yip, Xiaofang Zhou</div>
-                    <div class="publication-venue">Under review @DEFT, ICDE 2026</div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-title">Generalized Origin-Destination-Time Flow Patterns</div>
-                    <div class="publication-authors">Chrysanthi Kosyfaki, Nikos Mamoulis, Reynold Cheng, Ben Kao</div>
-                    <div class="publication-venue">SSTD 2025</div>
                 </div>
 
                 <div class="publication-item">
@@ -410,13 +399,13 @@
                 
                 <div class="publication-item">
                     <div class="publication-title">Temporal Provenance in Temporal Interaction Networks</div>
-                    <div class="publication-authors">University of Amsterdam</div>
+                    <div class="publication-authors">University of Amsterdam, INDE lab</div>
                     <div class="publication-venue">October 2025</div>
                 </div>
 
                 <div class="publication-item">
                     <div class="publication-title">Flow Analytics in Large-Scale Networks</div>
-                    <div class="publication-authors">Hong Kong University of Science and Technology</div>
+                    <div class="publication-authors">Hong Kong University of Science and Technology, CSE Department</div>
                     <div class="publication-venue">November 2024</div>
                 </div>
             </section>
@@ -459,6 +448,12 @@
 
             <section id="teaching" class="news-section">
                 <h2>TEACHING EXPERIENCE</h2>
+                 <div class="publication-item">
+                    <div class="publication-title">Network Data Analytics</div>
+                    <div class="publication-authors">Guest lecturer, The University of Hong Kong</div>
+                    <div class="publication-venue">Spring 2026</div>
+                </div>
+
                 
                 <div class="publication-item">
                     <div class="publication-title">Network Data Analytics</div>
@@ -500,7 +495,7 @@
                 <a href="https://kosyfakicse.github.io"><i class="fas fa-globe"></i> Website</a>
             </div>
             <div class="footer-copyright">
-                © 2025 Chrysanthi Kosyfaki. Last updated January 2026
+                © 2025 Chrysanthi Kosyfaki. Last updated February 2026
             </div>
         </div>
     </div>
