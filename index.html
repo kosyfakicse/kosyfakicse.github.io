@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrysanthi Kosyfaki</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --text-dark: #2d2d2d;
+            --text-medium: #555;
+            --text-light: #777;
+            --text-muted: #999;
+            --bg-white: #fff;
+            --bg-light: #f8f9fa;
+            --bg-hover: #f0f1f2;
+            --border-light: #e9ecef;
+            --border-lighter: #f1f3f4;
+            --accent: #5a7d9a;
+            --accent-light: #e8f0f5;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            font-family: "Source Serif 4", Georgia, serif;
+            line-height: 1.65;
+            color: var(--text-medium);
+            background-color: var(--bg-white);
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .masthead {
+            background-color: var(--bg-white);
+            border-bottom: 1px solid var(--border-light);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+
+        .masthead__inner {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .site-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.6rem 0;
+        }
+
+        .site-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-family: "Inter", -apple-system, sans-serif;
+            transition: color 0.2s;
+        }
+
+        .site-title:hover { color: var(--accent); }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.25rem;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.78rem;
+            font-family: "Inter", -apple-system, sans-serif;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+        #main {
+            flex: 1;
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 1.25rem 2rem 0.5rem 2rem;
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        .sidebar {
+            flex: 0 0 160px;
+            align-self: flex-start;
+        }
+
+        .author__avatar {
+            width: 130px;
+            border-radius: 50%;
+            margin: 0 auto 0.6rem;
+            display: block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 3px solid var(--bg-white);
+            outline: 1px solid var(--border-light);
+        }
+
+        .author__name {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+            text-align: center;
+            color: var(--text-dark);
+            font-family: "Inter", -apple-system, sans-serif;
+        }
+
+        .author__bio {
+            color: var(--text-light);
+            font-size: 0.68rem;
+            text-align: center;
+            margin-bottom: 0.85rem;
+            font-family: "Inter", -apple-system, sans-serif;
+            line-height: 1.4;
+        }
+
+        .contact-section {
+            text-align: center;
+            margin-bottom: 0.6rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .section-label {
+            font-size: 0.55rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.35rem;
+            font-family: "Inter", -apple-system, sans-serif;
+            font-weight: 600;
+        }
+
+        .email-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            color: var(--text-medium);
+            text-decoration: none;
+            font-size: 0.65rem;
+            font-family: "Inter", -apple-system, sans-serif;
+            padding: 0.3rem 0.5rem;
+            background: var(--bg-light);
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        .email-link:hover { background: var(--accent-light); color: var(--accent); }
+        .email-link i { color: var(--accent); font-size: 0.7rem; }
+
+        .social-section { text-align: center; }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 0.35rem;
+        }
+
+        .social-icons a {
+            color: var(--text-light);
+            font-size: 0.8rem;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            background: var(--bg-light);
+            transition: all 0.2s;
+        }
+
+        .social-icons a:hover {
+            color: var(--bg-white);
+            background: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .page-content { 
+            flex: 1; 
+            min-width: 0;
+            padding-bottom: 0;
+        }
+
+        .page-content p {
+            margin-bottom: 0.7rem;
+            font-size: 0.88rem;
+            color: var(--text-medium);
+        }
+
+        .page-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .page-content a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(90, 125, 154, 0.3);
+            transition: border-color 0.2s;
+        }
+
+        .page-content a:hover { border-color: var(--accent); }
+
+        .section-title, .news-section h2 {
+            font-size: 0.62rem;
+            font-weight: 600;
+            margin-bottom: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent-light);
+            padding-bottom: 0.4rem;
+            font-family: "Inter", -apple-system, sans-serif;
+        }
+
+        .news-section { margin-top: 1.25rem; }
+        .news-section ul { list-style: none; }
+
+        .news-section li {
+            padding: 0.3rem 0;
+            border-bottom: 1px solid var(--border-lighter);
+            line-height: 1.45;
+            font-size: 0.82rem;
+        }
+
+        .news-section li:last-child { border-bottom: none; padding-bottom: 0; }
+
+        .news-date {
+            font-weight: 600;
+            color: var(--accent);
+            margin-right: 0.35rem;
+            font-family: "Inter", -apple-system, sans-serif;
+            font-size: 0.68rem;
+        }
+
+        .publication-item {
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-lighter);
+        }
+
+        .publication-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+        .publication-title {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.12rem;
+            font-size: 0.85rem;
+            line-height: 1.35;
+        }
+
+        .publication-authors {
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 0.08rem;
+            font-size: 0.75rem;
+        }
+
+        .publication-venue {
+            color: var(--text-muted);
+            font-size: 0.7rem;
+            font-family: "Inter", -apple-system, sans-serif;
+            font-weight: 500;
+        }
+
+        .student-item {
+            margin-bottom: 0.3rem;
+            font-size: 0.82rem;
+            line-height: 1.45;
+        }
+
+        .student-name { font-weight: 600; color: var(--text-dark); }
+
+        h3 {
+            margin-top: 0.75rem;
+            margin-bottom: 0.35rem;
+            color: var(--text-medium);
+            font-size: 0.72rem;
+            font-weight: 600;
+            font-family: "Inter", -apple-system, sans-serif;
+        }
+
+        h3:first-of-type { margin-top: 0; }
+
+        .page-footer {
+            background-color: var(--bg-light);
+            color: var(--text-light);
+            padding: 0.5rem;
+            margin-top: 0;
+            border-top: 1px solid var(--border-light);
+        }
+
+        .footer-content {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .footer-links { margin-bottom: 0.2rem; }
+
+        .footer-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 0.4rem;
+            font-size: 0.72rem;
+            font-family: "Inter", -apple-system, sans-serif;
+        }
+
+        .footer-links a:hover { color: var(--accent); }
+
+        .footer-copyright {
+            font-size: 0.68rem;
+            color: var(--text-muted);
+            font-family: "Inter", -apple-system, sans-serif;
+        }
+
+        .cv-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 0.35rem 0.7rem;
+            background: var(--bg-light);
+            border-radius: 4px;
+            font-size: 0.82rem;
+            font-family: "Inter", -apple-system, sans-serif;
+        }
+
+        .cv-link:hover { background: var(--bg-hover); }
+
+        @media (max-width: 700px) {
+            #main { flex-direction: column; gap: 1.25rem; }
+            .sidebar { position: static; max-width: 180px; margin: 0 auto; }
+            .nav-links { gap: 0.8rem; }
+        }
+
+        @media (max-width: 500px) {
+            .nav-links { display: none; }
+            #main { padding: 1rem 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="masthead">
+        <div class="masthead__inner">
+            <nav class="site-nav">
+                <a href="index.html" class="site-title">Chrysanthi Kosyfaki</a>
+                <ul class="nav-links">
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="students.html">Students</a></li>
+                    <li><a href="talks.html">Talks</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="kosyfaki_cv.pdf" target="_blank">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="sidebar">
+            <img src="me.jpg" alt="Chrysanthi Kosyfaki" class="author__avatar">
+            <h3 class="author__name">Chrysanthi Kosyfaki</h3>
+            <p class="author__bio">Postdoctoral Research Fellow<br>HKUST</p>
+            
+            <div class="contact-section">
+                <p class="section-label">Contact me</p>
+                <a href="mailto:ckosyfaki@cse.ust.hk" class="email-link"><i class="fas fa-envelope"></i> ckosyfaki@cse.ust.hk</a>
+            </div>
+            
+            <div class="social-section">
+                <p class="section-label">Follow for updates</p>
+                <div class="social-icons">
+                    <a href="https://scholar.google.com/citations?user=t5qphlwAAAAJ&hl=en" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://github.com/kosyfakicse" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/chrysanthi-kosyfaki-88b84b158/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.researchgate.net/profile/Chrysanthi-Kosyfaki-2?ev=hdr_xprf" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <article class="page-content">
+            <section>
+                <h2 class="section-title">About Me</h2>
+                <p>I am a postdoctoral research fellow in the <a href="https://cse.hkust.edu.hk/">Department of Computer Science and Engineering</a> at Hong Kong University of Science and Technology. Previously, I was a postdoctoral research associate at the University of Hong Kong. I obtained my Ph.D. degree from University of Ioannina, Computer Science and Engineering Department, working with Prof. Nikos Mamoulis.</p>
+            </section>
+
+            <section class="news-section">
+                <h2>Research Interests</h2>
+                <p>My research interests are in the area of graph analytics with a particular focus on a new class of networks called Temporal Interaction Networks (TINs). In these networks, a quantity (flow) transfers from one vertex to another within a time window. TINs can model dynamic systems where entities exchange quantities, such as financial transactions, transportation flows, or communication data. Over the past few years, I have been developing efficient solutions to optimize classical problems—such as max-flow computation—by introducing the temporal dimension.</p>
+                <p>I have also explored the Text-to-SQL domain, focusing on addressing challenges related to text ambiguity in natural language database queries.</p>
+                <p>Currently, I am working on provenance tracking for streaming systems. As real-time analytics pipelines grow in complexity, understanding how outputs are derived from inputs becomes critical for debugging, auditing, and explainability. I am developing how-much provenance, a new model that efficiently counts input contributions across dataflow paths rather than enumerating individual tuples. This approach incorporates temporal window-based tracking and path compression techniques to scale to high-throughput streaming workloads, and supports queries that allow users to identify which inputs (e.g., from which paths or time windows) contributed to a given output.</p>
+            </section>
+
+            <section class="news-section">
+                <h2>Recent News</h2>
+                <ul>
+                    <li><span class="news-date">2026-02:</span> Serving as PC member for PVLDB 2027</li>
+                    <li><span class="news-date">2026-01:</span> One tutorial accepted to SIGMOD 2026</li>
+                    <li><span class="news-date">2025-12:</span> One paper accepted to ICDE 2026</li>
+                    <li><span class="news-date">2025-11:</span> I will serve as publicity chair for @MDM 2026</li>
+                    <li><span class="news-date">2025-06:</span> One paper accepted to SSTD 2025</li>
+                    <li><span class="news-date">2025-05:</span> Serving as PC member for PVLDB 2026 and ICDE 2026, co-chair for TKDE Poster track @ICDE 2026</li>
+                    <li><span class="news-date">2025-05:</span> Started position as Postdoctoral Research Fellow at HKUST</li>
+                    <li><span class="news-date">2024-06:</span> Paper accepted to PVLDB 2024 - "A Sampling-based Framework for Hypothesis Testing on Large Attributed Graphs"</li>
+                </ul>
+            </section>
+        </article>
+    </div>
+
+    <div class="page-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="https://github.com/kosyfakicse"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://kosyfakicse.github.io"><i class="fas fa-globe"></i> Website</a>
+            </div>
+            <div class="footer-copyright">© 2025 Chrysanthi Kosyfaki. Last updated April 2026</div>
+        </div>
+    </div>
+</body>
+</html>

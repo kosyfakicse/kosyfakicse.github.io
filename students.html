@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students - Chrysanthi Kosyfaki</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --text-dark: #2d2d2d;
+            --text-medium: #555;
+            --text-light: #777;
+            --text-muted: #999;
+            --bg-white: #fff;
+            --bg-light: #f8f9fa;
+            --bg-hover: #f0f1f2;
+            --border-light: #e9ecef;
+            --border-lighter: #f1f3f4;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Source Serif 4", Georgia, serif; line-height: 1.6; color: var(--text-medium); background-color: var(--bg-white); }
+        .masthead { background-color: var(--bg-white); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; }
+        .masthead__inner { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+        .site-nav { display: flex; align-items: center; justify-content: space-between; padding: 0.6rem 0; }
+        .site-title { font-size: 1.1rem; font-weight: 600; color: var(--text-dark); text-decoration: none; font-family: "Inter", -apple-system, sans-serif; }
+        .nav-links { display: flex; list-style: none; gap: 1.25rem; }
+        .nav-links a { color: var(--text-light); text-decoration: none; font-size: 0.78rem; font-family: "Inter", -apple-system, sans-serif; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--text-dark); }
+        #main { max-width: 900px; margin: 0 auto; padding: 1.25rem 1rem; }
+        .page-title { font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem; font-family: "Inter", -apple-system, sans-serif; border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem; }
+        h3 { margin-top: 1rem; margin-bottom: 0.4rem; color: var(--text-medium); font-size: 0.78rem; font-weight: 600; font-family: "Inter", -apple-system, sans-serif; }
+        h3:first-of-type { margin-top: 0; }
+        .student-item { margin-bottom: 0.35rem; font-size: 0.85rem; line-height: 1.5; }
+        .student-name { font-weight: 600; color: var(--text-dark); }
+        .page-footer { background-color: var(--bg-light); color: var(--text-light); padding: 1rem; margin-top: 1.5rem; border-top: 1px solid var(--border-light); }
+        .footer-content { max-width: 900px; margin: 0 auto; text-align: center; }
+        .footer-links { margin-bottom: 0.4rem; }
+        .footer-links a { color: var(--text-light); text-decoration: none; margin: 0 0.4rem; font-size: 0.72rem; font-family: "Inter", -apple-system, sans-serif; }
+        .footer-links a:hover { color: var(--text-dark); }
+        .footer-copyright { font-size: 0.68rem; color: var(--text-muted); font-family: "Inter", -apple-system, sans-serif; }
+        @media (max-width: 500px) { .nav-links { display: none; } #main { padding: 1rem 0.75rem; } }
+    </style>
+</head>
+<body>
+    <div class="masthead">
+        <div class="masthead__inner">
+            <nav class="site-nav">
+                <a href="index.html" class="site-title">Chrysanthi Kosyfaki</a>
+                <ul class="nav-links">
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="students.html" class="active">Students</a></li>
+                    <li><a href="talks.html">Talks</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="kosyfaki_cv.pdf" target="_blank">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="main">
+        <h1 class="page-title">Student Supervision</h1>
+        
+        <h3>PhD Students (HKUST)</h3>
+        <div class="student-item"><span class="student-name">Sau Lai YIP</span> — Working on Text-to-SQL problems</div>
+        <div class="student-item"><span class="student-name">Nujibieke Shabuerjiang</span> — Working on spatiotemporal data management topics</div>
+        
+        <h3>PhD Students (HKU)</h3>
+        <div class="student-item"><span class="student-name">Yun (Carrie) Wang</span> — Working on hypothesis testing on graphs</div>
+        <div class="student-item"><span class="student-name">Xiangju Zhu</span> — Working on subgraph counting problems</div>
+        <div class="student-item"><span class="student-name">Mohammad Matin Najafi</span> — Worked on subgraph counting problems, now at Huawei HK</div>
+
+        <h3>Bachelor Students (University of Ioannina)</h3>
+        <div class="student-item"><span class="student-name">Ioanna Papayianni (2020)</span> — Efficient algorithms for analyzing flow patterns in large networks</div>
+        <div class="student-item"><span class="student-name">Dimitris Zervas (2021)</span> — Detecting the origin of transactions in Bitcoin Network</div>
+        <div class="student-item"><span class="student-name">Sotiria Kastana (2021)</span> — Design of a synthetic indoor movement generator</div>
+        <div class="student-item"><span class="student-name">Vasileios Georgoulas (2023)</span> — Web application for passenger movement with public transport</div>
+    </div>
+
+    <div class="page-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="https://github.com/kosyfakicse"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+            <div class="footer-copyright">© 2025 Chrysanthi Kosyfaki</div>
+        </div>
+    </div>
+</body>
+</html>
