@@ -35,7 +35,7 @@
         .teaching-item { margin-bottom: 0.75rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border-lighter); }
         .teaching-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
         .teaching-title { font-weight: 600; color: var(--text-dark); margin-bottom: 0.12rem; font-size: 0.95rem; line-height: 1.35; }
-        .teaching-role { font-style: italic; color: var(--text-light); margin-bottom: 0.08rem; font-size: 0.85rem; }
+        .teaching-role { color: var(--text-light); margin-bottom: 0.08rem; font-size: 0.85rem; }
         .teaching-date { color: var(--text-muted); font-size: 0.82rem; font-family: var(--serif); font-weight: 500; }
         .page-footer { background-color: var(--bg-light); color: var(--text-light); padding: 1rem; margin-top: 1.5rem; border-top: 1px solid var(--border-light); }
         .footer-content { max-width: 900px; margin: 0 auto; text-align: center; }
@@ -44,6 +44,7 @@
         .footer-links a:hover { color: var(--text-dark); }
         .footer-copyright { font-size: 0.68rem; color: var(--text-muted); font-family: var(--serif); }
         @media (max-width: 500px) { .nav-links { display: none; } #main { padding: 1rem 0.75rem; } }
+        .role { text-decoration: underline; text-underline-offset: 2px; color: var(--text-dark); }
     </style>
 </head>
 <body>
@@ -66,27 +67,27 @@
         <h1 class="page-title">Teaching Experience</h1>
         <div class="teaching-item">
             <div class="teaching-title">Network Data Analytics</div>
-            <div class="teaching-role">Guest lecturer, The University of Hong Kong</div>
+            <div class="teaching-role"><span class="role">Guest lecturer</span>, The University of Hong Kong (HKU), CS Department, Hong Kong SAR</div>
             <div class="teaching-date">Spring 2026</div>
         </div>
         <div class="teaching-item">
             <div class="teaching-title">Network Data Analytics</div>
-            <div class="teaching-role">Instructor, The University of Hong Kong</div>
+            <div class="teaching-role"><span class="role">Instructor</span>, The University of Hong Kong (HKU), CS Department, Hong Kong SAR</div>
             <div class="teaching-date">Spring 2025</div>
         </div>
         <div class="teaching-item">
             <div class="teaching-title">Complex Data Management</div>
-            <div class="teaching-role">Teaching Assistant, University of Ioannina</div>
+            <div class="teaching-role"><span class="role">Teaching Assistant</span>, University of Ioannina (UoI), CSE Department, Ioannina, Greece</div>
             <div class="teaching-date">Spring 2019-2023</div>
         </div>
         <div class="teaching-item">
             <div class="teaching-title">Object Oriented Programming</div>
-            <div class="teaching-role">Teaching Assistant, University of Ioannina</div>
+            <div class="teaching-role"><span class="role">Teaching Assistant</span>, University of Ioannina (UoI), CSE Department, Ioannina, Greece</div>
             <div class="teaching-date">Spring 2018</div>
         </div>
         <div class="teaching-item">
             <div class="teaching-title">Introduction to Programming</div>
-            <div class="teaching-role">Teaching Assistant, University of Ioannina</div>
+            <div class="teaching-role"><span class="role">Teaching Assistant</span>, University of Ioannina (UoI), CSE Department, Ioannina, Greece</div>
             <div class="teaching-date">Fall 2017-2022</div>
         </div>
     </div>
