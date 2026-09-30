@@ -19,29 +19,30 @@
             --bg-hover: #f0f1f2;
             --border-light: #e9ecef;
             --border-lighter: #f1f3f4;
+            --serif: "Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella", "Source Serif 4", Georgia, serif;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: "Source Serif 4", Georgia, serif; line-height: 1.6; color: var(--text-medium); background-color: var(--bg-white); }
+        body { font-family: var(--serif); line-height: 1.6; color: var(--text-medium); background-color: var(--bg-white); }
         .masthead { background-color: var(--bg-white); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 1000; }
         .masthead__inner { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
         .site-nav { display: flex; align-items: center; justify-content: space-between; padding: 0.6rem 0; }
-        .site-title { font-size: 1.1rem; font-weight: 600; color: var(--text-dark); text-decoration: none; font-family: "Inter", -apple-system, sans-serif; }
+        .site-title { font-size: 1.1rem; font-weight: 600; color: var(--text-dark); text-decoration: none; font-family: var(--serif); }
         .nav-links { display: flex; list-style: none; gap: 1.25rem; }
-        .nav-links a { color: var(--text-light); text-decoration: none; font-size: 0.78rem; font-family: "Inter", -apple-system, sans-serif; font-weight: 500; transition: color 0.2s; }
+        .nav-links a { color: var(--text-light); text-decoration: none; font-size: 0.95rem; font-family: var(--serif); font-weight: 500; transition: color 0.2s; }
         .nav-links a:hover, .nav-links a.active { color: var(--text-dark); }
         #main { max-width: 900px; margin: 0 auto; padding: 1.25rem 1rem; }
-        .page-title { font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem; font-family: "Inter", -apple-system, sans-serif; border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem; }
+        .page-title { font-size: 1.25rem; font-weight: 600; font-variant: small-caps; letter-spacing: 0.5px; color: #3d3d3d; margin-bottom: 1rem; font-family: var(--serif); border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem; }
         .talk-item { margin-bottom: 0.75rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border-lighter); }
         .talk-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-        .talk-title { font-weight: 600; color: var(--text-dark); margin-bottom: 0.12rem; font-size: 0.88rem; line-height: 1.35; }
-        .talk-venue { font-style: italic; color: var(--text-light); margin-bottom: 0.08rem; font-size: 0.78rem; }
-        .talk-date { color: var(--text-muted); font-size: 0.72rem; font-family: "Inter", -apple-system, sans-serif; font-weight: 500; }
+        .talk-title { font-weight: 600; color: var(--text-dark); margin-bottom: 0.12rem; font-size: 0.95rem; line-height: 1.35; }
+        .talk-venue { font-style: italic; color: var(--text-light); margin-bottom: 0.08rem; font-size: 0.85rem; }
+        .talk-date { color: var(--text-muted); font-size: 0.82rem; font-family: var(--serif); font-weight: 500; }
         .page-footer { background-color: var(--bg-light); color: var(--text-light); padding: 1rem; margin-top: 1.5rem; border-top: 1px solid var(--border-light); }
         .footer-content { max-width: 900px; margin: 0 auto; text-align: center; }
         .footer-links { margin-bottom: 0.4rem; }
-        .footer-links a { color: var(--text-light); text-decoration: none; margin: 0 0.4rem; font-size: 0.72rem; font-family: "Inter", -apple-system, sans-serif; }
+        .footer-links a { color: var(--text-light); text-decoration: none; margin: 0 0.4rem; font-size: 0.72rem; font-family: var(--serif); }
         .footer-links a:hover { color: var(--text-dark); }
-        .footer-copyright { font-size: 0.68rem; color: var(--text-muted); font-family: "Inter", -apple-system, sans-serif; }
+        .footer-copyright { font-size: 0.68rem; color: var(--text-muted); font-family: var(--serif); }
         @media (max-width: 500px) { .nav-links { display: none; } #main { padding: 1rem 0.75rem; } }
     </style>
 </head>
